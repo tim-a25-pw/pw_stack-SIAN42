@@ -11,6 +11,7 @@
     justify-content: space-between;
     padding: 0 var(--spacing-sm);
     height: var(--header-height);
+    max-height: var(--header-height);
     top: 0;
     z-index: 10;
 
