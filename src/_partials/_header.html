@@ -7,27 +7,34 @@
 
         <link rel="stylesheet" href="styles/main.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
         <script src="scripts/main.js" defer></script>
     </head>
 
     <body>
 
 <!-- Header -->
-<header>
-    <div class="header">
-        <a href="#">
-            <svg class="icon">
-                <use xlink:href="#icon-logo"></use>
-            </svg>
-            tim Québec
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Athlètes</a></li>
+<header class="header" data-component="Header" data-threshold="0.1" data-always-show>
+            <a href="index.html" class="header__brand">
+                <svg class="icon">
+                    <use xlink:href="#icon-logo"></use>
+                </svg>
+                tim Québec
+            </a>
+            <nav class="nav-primary">
+                <ul>
+                   <li><a href="#">Athlètes</a></li>
                 <li><a href="#">Disciplines</a></li>
                 <li><a href="#">Programmes</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>

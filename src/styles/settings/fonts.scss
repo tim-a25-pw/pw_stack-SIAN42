@@ -4,12 +4,14 @@
 /// Font family
 :root {
     --font-primary: 'Nunito', sans-serif;
-    --font-secondary: 'PT Sans', sans-serif;
+    --font-secondary: 'Open Sans', sans-serif;
 
-    --font-size-content: 1.8rem;
+    --font-size-content: #{typo(16px, 18px)};
 
     /// Grosseur des textes
-    --font-size-h1: 10rem;
-    --font-size-h2: 7rem;
-    --font-size-h3: 3.5rem;
+    --font-size-h1: #{typo(80px, 100px)};
+    --font-size-h2: #{typo(40px, 50px)};
+    --font-size-h3: #{typo(18px, 22px)};
+
+    --font-size-nav: 14px;
 }
