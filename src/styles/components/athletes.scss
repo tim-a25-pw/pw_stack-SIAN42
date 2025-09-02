@@ -31,7 +31,59 @@
         gap: var(--spacing-sm);
 
         .athlete {
-            background-color: var(--color-primary);
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: filter 0.3s ease;
+            }
+        }
+        .athlete__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            opacity: 0;
+            z-index: 2;
+            transition: opacity 0.3s ease;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-sm);
+
+            .overlay-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: auto;
+            }
+            h3 {
+                margin: 0;
+                color: white;
+            }
+
+            .icon {
+                width: 80px;
+                height: 80px;
+                fill: white;
+            }
+        }
+
+        .athlete:hover .athlete__overlay {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 }
