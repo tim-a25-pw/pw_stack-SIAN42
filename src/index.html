@@ -68,10 +68,11 @@
                             </svg>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
+</div>
+
 
     <!-- Gallery -->
 
@@ -81,11 +82,20 @@
                 <h2>Sports en image</h2>
             </div>
 
-            <img src="assets/images/swiper1.jpg" alt="" />
-            <img src="assets/images/swiper2.jpg" alt="" />
-            <img src="assets/images/swiper3.jpg" alt="" />
+            <div class="card swiper" data-scrolly="fromRight" data-component="Carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/swiper1.jpg" alt="Image 1" /></div>
+                    <div class="swiper-slide"><img src="assets/images/swiper2.jpg" alt="Image 2" /></div>
+                    <div class="swiper-slide"><img src="assets/images/swiper3.jpg" alt="Image 3" /></div>
+                </div>
+                    <!-- pagination -->
+                    <div class="swiper-pagination"></div>
+            </div>
+    
         </div>
+
     </div>
+  
 
     {% include '_partials/_footer.html' %}
 </div>
