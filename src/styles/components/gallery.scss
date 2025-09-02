@@ -1,0 +1,25 @@
+/* ==========================================================================
+   athletes / COMPONENTS
+   ========================================================================== */
+
+.gallery .wrapper {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        align-self: end;
+        margin: var(--spacing-md) 0;
+
+        h2 {
+            margin: 0;
+            color: var(--color-black);
+        }
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--spacing-sm);
+    }
+}
