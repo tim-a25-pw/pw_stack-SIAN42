@@ -57,19 +57,21 @@
         }
 
         .icon {
-            margin: 0;
-            padding: 0;
-        }
-
-        li:hover {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 24px;
+            width: 24px;
+        }
 
+        li {
             background-color: #444444;
             border-radius: 360px;
-            height: 28px;
-            width: 28px;
+            padding: 8px;
+        }
+
+        li:hover {
+            background-color: var(--color-primary);
         }
     }
 }
